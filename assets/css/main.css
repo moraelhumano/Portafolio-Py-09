@@ -1,7 +1,6 @@
 body{
     margin: 0;
     font-family: 'Nunito', sans-serif;
-
 }
 
 nav{
@@ -11,8 +10,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 
     padding: 20px 16px;
     background-color: #0097dd;
@@ -35,11 +32,36 @@ nav a{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-position:bottom;
 }
 
 #hero-home img{
   width: 45%;
   height: 300px;
+}
+
+#grid-example{
+  display: flex;
+}
+
+#grid-container{
+  display: grid;
+  background-color: green;
+
+  grid-template-columns: 100px 100px ;
+  grid-template-rows: 100px 100px 100px;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+#grid-container div{
+  background-color: red;
+  border-radius: 20px;
+  border: solid black 2px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
 }
 
 .mr-md{

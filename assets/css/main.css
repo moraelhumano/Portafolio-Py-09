@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 nav{
@@ -9,8 +11,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 15px;
 
+
+
+    padding: 20px 16px;
     background-color: #0097dd;
 }
 
@@ -23,12 +27,21 @@ nav a{
     height: 30px;
 }
 
+#hero-home{
+  height: 400px;
+  width: 100%;
+  background-image: url("https://www.lasdelaintuicion.com/static/media/qfde.62db3fa9.png");
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#hero-home img{
+  width: 45%;
+  height: 300px;
+}
+
 .mr-md{
     margin-right: 20px;
 }
-
-
-
-
-
-

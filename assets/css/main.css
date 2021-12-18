@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
     margin: 0;
     font-family: 'Nunito', sans-serif;
@@ -25,9 +30,9 @@ nav a{
 }
 
 #hero-home{
-  height: 400px;
+  height: 40vh;
   width: 100%;
-  background-image: url("https://www.lasdelaintuicion.com/static/media/qfde.62db3fa9.png");
+  background: pink;
 
   display: flex;
   align-items: center;
@@ -66,4 +71,53 @@ nav a{
 
 .mr-md{
     margin-right: 20px;
+}
+
+.contenedor-padre{
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.contenedor-hijo{
+  width: 50%;
+  height: 250px;
+  background-color: green;
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  nav{
+    justify-content: center;
+  }
+
+  #hero-home{
+    flex-direction: column-reverse;
+  }
+
+  #hero-home img{
+    width: 30%;
+    height: 50%;
+  }
+
+  .text-hero{
+    text-align:center;
+  }
+
+  .contenedor-hijo{
+    width: 70%;
+    height: 200px;
+    background-color: green;
+  }
+
+  .display-none{
+    display: none;
+  }
+
+
 }
